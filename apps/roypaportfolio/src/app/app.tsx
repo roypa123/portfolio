@@ -212,7 +212,7 @@ export default function Portfolio() {
                 <img
                   src={RoyImage}
                   alt="Developer"
-                  className="h-full object-cover rounded-2xl"
+                  className="h-full object-cover rounded-2xl lg:w-96 lg:h-96"
                 />
               </div>
             </div>

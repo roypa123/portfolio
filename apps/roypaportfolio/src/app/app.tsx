@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import React1 from "../assets/react1.svg";
 import Flutter1 from "../assets/flutter1.svg";
 import Angular1 from "../assets/angular1.svg";
+import RoyImage from "../assets/royimage.png"
 import {
   Menu,
   ExternalLink,
@@ -167,6 +168,7 @@ export default function Portfolio() {
         {/* Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-emerald-500/5 rounded-full blur-3xl"></div>
+          {/* <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div> */}
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
         </div>
 
@@ -206,23 +208,22 @@ export default function Portfolio() {
 
           <div className="relative flex justify-center lg:justify-end">
             <div className="relative">
-              <div className="w-80 h-80 lg:w-96 lg:h-96 relative">
+              <div className="w-80 h-80 md:-left-14 lg:w-96 lg:h-96 relative ">
                 <img
-                  src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face"
+                  src={RoyImage}
                   alt="Developer"
-                  className="w-full h-full object-cover rounded-2xl"
+                  className="h-full object-cover rounded-2xl"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent rounded-2xl"></div>
               </div>
             </div>
 
             {/* Floating Tech Icons */}
-            <div className="absolute top-16 right-4 w-[80px] h-[80px] bg-red-500/10 backdrop-blur-sm border border-red-500/20 rounded-2xl flex items-center justify-center animate-float">
+            <div className="absolute top-5 right-1 w-[80px] h-[80px] bg-red-500/10 backdrop-blur-sm border border-red-500/20 rounded-2xl flex items-center justify-center animate-float">
               <div className="text-red-400 font-bold text-xl">
               <img src={Angular1} alt="" />
               </div>
             </div>
-            <div className="absolute bottom-24 left-[20px] md:left-[170px]  w-[80px] h-[80px] bg-blue-500/10  backdrop-blur-sm border border-blue-500/10  rounded-2xl flex items-center justify-center animate-float-delayed">
+            <div className="absolute bottom-1  left-0 md:left-11  w-[80px] h-[80px] bg-blue-500/10  backdrop-blur-sm border border-blue-500/10  rounded-2xl flex items-center justify-center animate-float-delayed">
               <div className="text-emerald-400 font-bold text-lg">
                 <img src={React1} alt="" />
               </div>

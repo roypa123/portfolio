@@ -3,7 +3,6 @@
 import { z } from "zod"
 import { useForm } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
-// import { useRouter } from "next/navigation"
 
 import { Send } from "lucide-react"
 import { Button } from "../components/ui/button"
@@ -26,8 +25,6 @@ type FormData = z.infer<typeof formSchema>
 
 export default function CardSection() {
 
-  // const router = useRouter()
-
    const {
     register,
     handleSubmit,
@@ -37,11 +34,20 @@ export default function CardSection() {
     resolver: zodResolver(formSchema)
   })
 
-    const onSubmit = async (data: FormData) => {
 
-    console.log("Form Data:", data)
-    reset()
+  const onSubmit = async (data: FormData) => {
+   console.log("Form Data:", data)
+
+    const { firstName, lastName, email, subject, message } = data
+    const fullName = `${firstName} ${lastName}`
+
+    const mailtoLink = `mailto:roypa81130@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(
+      `From: ${fullName} <${email}>\n\n${message}`
+    )}`
+
+   window.open(mailtoLink, '_blank');
   }
+
 
   return (
      <Card className="bg-gray-900/50 backdrop-blur-sm border border-gray-800">

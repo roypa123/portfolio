@@ -27,6 +27,7 @@ import { Card, CardContent } from "./components/ui/card"
 import { Input } from "./components/ui/input"
 import { Textarea } from "./components/ui/textarea"
 import { Badge } from "./components/ui/badge"
+import CardSection from "./sections/CardSection";
 
 export default function Portfolio() {
   const [activeSection, setActiveSection] = useState("home")
@@ -389,7 +390,7 @@ export default function Portfolio() {
                   </div>
                 </div>
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-semibold mb-3 group-hover:text-emerald-400 transition-colors">
+                  <h3 className="text-xl font-semibold mb-3 text-white  group-hover:text-emerald-400 transition-colors">
                     {project.title}
                   </h3>
                   <p className="text-gray-400 mb-4 leading-relaxed">{project.description}</p>
@@ -475,42 +476,8 @@ export default function Portfolio() {
                 </Button>
               </div>
             </div>
-
-            <Card className="bg-gray-900/50 backdrop-blur-sm border border-gray-800">
-              <CardContent className="p-8">
-                <form className="space-y-6">
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-                    <div>
-                      <label className="block text-sm text-white font-medium mb-2">First Name</label>
-                      <Input className="bg-gray-800/50 text-white border-gray-700 focus:border-emerald-500" />
-                    </div>
-                    <div>
-                      <label className="block text-sm text-white font-medium mb-2">Last Name</label>
-                      <Input className="bg-gray-800/50 text-white border-gray-700 focus:border-emerald-500" />
-                    </div>
-                  </div>
-                  <div>
-                    <label className="block text-sm text-white font-medium mb-2">Email</label>
-                    <Input type="email" className="bg-gray-800/50 text-white border-gray-700 focus:border-emerald-500" />
-                  </div>
-                  <div>
-                    <label className="block text-sm text-white font-medium mb-2">Subject</label>
-                    <Input className="bg-gray-800/50 border-gray-700 text-white focus:border-emerald-500" />
-                  </div>
-                  <div>
-                    <label className="block text-sm text-white font-medium mb-2">Message</label>
-                    <Textarea
-                      rows={5}
-                      className="bg-gray-800/50 border-gray-700 text-white focus:border-emerald-500 resize-none"
-                    />
-                  </div>
-                  <Button className="w-full bg-emerald-500 hover:bg-emerald-600 text-black font-semibold py-3 rounded-full transition-all duration-300 hover:scale-105">
-                    <Send className="h-4 w-4 mr-2" />
-                    Send Message
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
+              <CardSection />
+             {/*----*/}
           </div>
         </div>
       </section>

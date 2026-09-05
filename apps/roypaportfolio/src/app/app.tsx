@@ -114,7 +114,7 @@ export default function Portfolio() {
       description: `Nexlytics is a self-hosted, privacy-conscious web analytics platform — a lighter, more transparent alternative to Google Analytics, built for teams who want first-party visibility into their website traffic without third-party data sharing.
                    At its core, Nexlytics tracks visitor behavior through a lightweight JavaScript snippet embedded on a customer's website. It automatically captures pageviews, sessions, and referrer chains, and exposes a simple window.nexlytics(name, props) API for custom event tracking — clicks, form submissions, conversions, anything a site owner wants to measure. Events flow through a dedicated, publicly reachable collector service, designed to accept traffic from any origin without requiring authentication, since it's meant to be embedded on strangers' websites.`,
       image:
-        'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
+        'https://raw.githubusercontent.com/roypa123/analytics/main/image/landing_page.jpg?w=400&h=300&fit=crop',
       tech: ['React', 'Tailwind', 'Shadcn/ui', 'TanStack Query/Router', 'Jotai','FastAPI','PostgreSQL','Docker','Dokploy'],
       github: 'https://github.com/roypa123/analytics',
       live: '#',
@@ -131,7 +131,7 @@ Supporting infrastructure includes MinIO object storage for medical document upl
 
 The result is a realistic, production-shaped reference implementation of hospital operations software — useful both as a working clinic management tool and as a demonstration of layered backend architecture (routes → controllers → services → repositories), role-based access control design, and transactional business logic in a healthcare domain.`,
       image:
-        'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
+        'https://raw.githubusercontent.com/roypa123/hospital/main/images/appointment_scheduler.JPG?w=400&h=300&fit=crop',
       tech: ['React', 'Tailwind', 'Shadcn/ui', 'TanStack Query/Router', 'Zustand','Node.js','PostgreSQL','redis','MiniIO', 'Docker','Dokploy'],
       github: 'https://github.com/roypa123/hospital',
       live: '#',

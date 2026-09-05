@@ -83,7 +83,7 @@ export default function Portfolio() {
       image:
         'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
       tech: ['React', 'Tailwind', 'Shadcn/ui', 'Redux tool kit', 'Nx Monorepo'],
-      github: 'https://github.com/roypa123/calculator',
+      github: '#',
       live: '#',
     },
     {
@@ -93,7 +93,7 @@ export default function Portfolio() {
       image:
         'https://github.com/roypa123/weather_app/blob/9bb4c65a6b769bf2740dc7f532dafee6e71ce8aa/extrafile/git_images/image1.jpeg',
       tech: ['React', 'Tailwind', 'Shadcn/ui', 'Redux tool kit', 'Nx Monorepo'],
-      github: 'https://github.com/roypa123/weather_app',
+      github: '#',
       live: '#',
     },
     {
@@ -474,20 +474,22 @@ The result is a realistic, production-shaped reference implementation of hospita
                   />
                   <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                   <div className="absolute top-4 right-4 flex space-x-2">
-                    <Button
+                    {project.github !== '#' &&<Button
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
+                      onClick={() => window.open(project.github, '_blank')}
                     >
                       <Github className="h-4 w-4" />
-                    </Button>
-                    <Button
+                    </Button>}
+                    {project.live !== '#' &&<Button
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
+                      onClick={() => window.open(project.live, '_blank')}
                     >
                       <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    </Button>}
                   </div>
                 </div>
                 <CardContent className="p-6">
@@ -542,20 +544,20 @@ The result is a realistic, production-shaped reference implementation of hospita
                   />
                   <div className="absolute inset-0 bg-black/50 group-hover:bg-black/30 transition-colors duration-300"></div>
                   <div className="absolute top-4 right-4 flex space-x-2">
-                    <Button
+                    {project.github !== '#' &&<Button
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
                     >
                       <Github className="h-4 w-4" />
-                    </Button>
-                    <Button
+                    </Button>}
+                    {project.live !== '#' &&<Button
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
                     >
                       <ExternalLink className="h-4 w-4" />
-                    </Button>
+                    </Button>}
                   </div>
                 </div>
                 <CardContent className="p-6">

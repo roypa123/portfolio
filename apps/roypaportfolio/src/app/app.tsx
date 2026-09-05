@@ -75,6 +75,22 @@ export default function Portfolio() {
 
   const projects = [
     {
+      title: "STC",
+      description: "STC (Saudi Telecom Company) is a leading telecommunications and digital services provider offering mobile, internet, cloud, cybersecurity, and digital solutions. It helps connect individuals and businesses through advanced technology and communication services.",
+      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
+      tech: ["React", "Tailwind", "Shadcn/ui","Redux tool kit","Nx Monorepo"],
+      github: "https://github.com/roypa123/calculator",
+      live: "#",
+    },
+    {
+      title: "Tele2",
+      description: "Tele2 is a telecommunications company that provides mobile, broadband, and digital communication services. The Tele2 project/portal can be described as a platform designed to support and manage telecom services, customers, sales, and related business operations.",
+      image: "https://github.com/roypa123/weather_app/blob/9bb4c65a6b769bf2740dc7f532dafee6e71ce8aa/extrafile/git_images/image1.jpeg",
+      tech: ["React", "Tailwind", "Shadcn/ui","Redux tool kit","Nx Monorepo"],
+      github: "https://github.com/roypa123/weather_app",
+      live: "#",
+    },
+    {
       title: "Toffee Ride",
       description: "An intelligent platform to promote self-learning in children . An app based solution accessible on your smartphones, tablets, laptops, and desktops.",
       image: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=300&fit=crop",
@@ -82,22 +98,8 @@ export default function Portfolio() {
       github: "#",
       live: "#",
     },
-    {
-      title: "Just Borrow",
-      description: "A user-friendly and comprehensive rental platform that simplifies the process of finding and renting a wide range of items, properties, and services",
-      image: "https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=400&h=300&fit=crop",
-      tech: ["Getx", "http"],
-      github: "#",
-      live: "#",
-    },
-    {
-      title: "Calculator",
-      description: "A Calculator App is a versatile and user-friendly application designed to perform mathematical calculations efficiently. Whether you're solving simple arithmetic problems or tackling complex equations, a calculator app provides a convenient and portable solution.",
-      image: "https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop",
-      tech: ["Flutter", "Bloc"],
-      github: "https://github.com/roypa123/calculator",
-      live: "#",
-    },
+    
+    
     {
       title: "Weather App",
       description: "A Weather App is a mobile application designed to provide users with accurate, real-time weather information. It offers a convenient way to stay updated on current weather conditions, helping users plan their daily activities accordingly.",

@@ -548,6 +548,7 @@ The result is a realistic, production-shaped reference implementation of hospita
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
+                      onClick={() => window.open(project.github, '_blank')}
                     >
                       <Github className="h-4 w-4" />
                     </Button>}
@@ -555,6 +556,7 @@ The result is a realistic, production-shaped reference implementation of hospita
                       size="icon"
                       variant="ghost"
                       className="bg-black/50 hover:bg-emerald-500/20 text-white"
+                      onClick={() => window.open(project.live, '_blank')}
                     >
                       <ExternalLink className="h-4 w-4" />
                     </Button>}

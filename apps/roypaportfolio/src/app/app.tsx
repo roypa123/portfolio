@@ -116,19 +116,34 @@ export default function Portfolio() {
       image:
         'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
       tech: ['React', 'Tailwind', 'Shadcn/ui', 'TanStack Query/Router', 'Jotai','FastAPI','PostgreSQL','Docker','Dokploy'],
-      github: 'https://github.com/roypa123/calculator',
+      github: 'https://github.com/roypa123/analytics',
       live: '#',
     },
      {
-      title: 'Nexlytics',
-      description: `Nexlytics is a self-hosted, privacy-conscious web analytics platform — a lighter, more transparent alternative to Google Analytics, built for teams who want first-party visibility into their website traffic without third-party data sharing.
-                   At its core, Nexlytics tracks visitor behavior through a lightweight JavaScript snippet embedded on a customer's website. It automatically captures pageviews, sessions, and referrer chains, and exposes a simple window.nexlytics(name, props) API for custom event tracking — clicks, form submissions, conversions, anything a site owner wants to measure. Events flow through a dedicated, publicly reachable collector service, designed to accept traffic from any origin without requiring authentication, since it's meant to be embedded on strangers' websites.`,
+      title: 'Aura Health — Hospital Management System',
+      description: `Aura Health is a full-stack hospital management platform built to run the day-to-day operations of a multi-department clinical facility, from patient registration through billing and insurance claims. The backend is a Node.js/Express REST API backed by PostgreSQL (via Knex), with a React 19 + TypeScript single-page frontend styled with Tailwind and shadcn/ui components.
+
+The system models nine distinct roles — Admin, Doctor, Receptionist, Nurse, Lab Technician, Pharmacist, Cashier, Insurance Officer, and Patient — enforced through a hybrid RBAC/ABAC layer that combines exact role checks with a numeric role-priority hierarchy, so senior roles inherit access without needing every permission explicitly listed. Authentication uses JWT access tokens paired with database-tracked refresh tokens, optional TOTP-based two-factor authentication with backup codes, and per-device session management.
+
+Core clinical workflows include appointment scheduling with optimistic-locking slot booking to prevent double-bookings, electronic medical records, digitally-signed prescriptions, pharmacy inventory managed on a first-expiry-first-out basis, and diagnostic lab test tracking. A unified "checkout" transaction ties a consultation together in one atomic step — recording the diagnosis, issuing a prescription, ordering labs, and generating an itemized invoice — with Razorpay integration for online payments and support for insurance claims against patient policies.
+
+Supporting infrastructure includes MinIO object storage for medical document uploads, Redis-backed background job queues (BullMQ) for email delivery and audit logging, real-time Socket.IO notifications pushed to patients and staff, and a full audit trail of sensitive actions across the system. The application is containerized with Docker and deployed via Dokploy, with Postgres, Redis, and MinIO running as independent managed services.
+
+The result is a realistic, production-shaped reference implementation of hospital operations software — useful both as a working clinic management tool and as a demonstration of layered backend architecture (routes → controllers → services → repositories), role-based access control design, and transactional business logic in a healthcare domain.`,
       image:
         'https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?w=400&h=300&fit=crop',
-      tech: ['React', 'Tailwind', 'Shadcn/ui', 'TanStack Query/Router', 'Jotai','FastAPI','PostgreSQL','Docker','Dokploy'],
-      github: 'https://github.com/roypa123/calculator',
+      tech: ['React', 'Tailwind', 'Shadcn/ui', 'TanStack Query/Router', 'Zustand','Node.js','PostgreSQL','redis','MiniIO', 'Docker','Dokploy'],
+      github: 'https://github.com/roypa123/hospital',
       live: '#',
     },
+ 
+
+
+
+
+
+
+
     
   ];
 
